@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="NameOFTest(failed)">
+    <classes>
+      <class name="Tests.LoginDomikTests">
+        <methods>
+          <include name="validLoginAndemptyPassword"/>
+          <include name="allFieldsEmpty"/>
+          <include name="checkedCheckboxDisplayed"/>
+          <include name="invalidLoginAndPassword"/>
+          <include name="validValues"/>
+          <include name="validLoginAndInvalidPassword"/>
+          <include name="validPasswordAndemptyLogin"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- Tests.LoginDomikTests -->
+      <class name="Tests.MenuItemsTests">
+        <methods>
+          <include name="setupClass"/>
+          <include name="sharedTabTest"/>
+          <include name="checkDriveTabs"/>
+        </methods>
+      </class> <!-- Tests.MenuItemsTests -->
+      <class name="Tests.CreateNewFolderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createFolder"/>
+          <include name="visitToFolder"/>
+          <include name="deleteDock"/>
+          <include name="setupClass"/>
+          <include name="clearTrash"/>
+          <include name="createNewWordDock"/>
+          <include name="reopenFile"/>
+        </methods>
+      </class> <!-- Tests.CreateNewFolderTest -->
+    </classes>
+  </test> <!-- NameOFTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 1 failed,  19 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.CreateNewFolderTest" hash-for-method="createFolder">createFolder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="allFieldsEmpty">allFieldsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="checkDriveTabs(trash, trash, //div[@class=&#039;client-listing client-listing_type_trash&#039;])">checkDriveTabs(trash, trash, //div[@class='client-listing client-listing_type_trash'])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="checkDriveTabs(journal, journal, //div[@class=&#039;journal-cluster&#039;])">checkDriveTabs(journal, journal, //div[@class='journal-cluster'])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="checkDriveTabs(photo, photo, //div[@class=&#039;page-stub page-stub_animated&#039;])">checkDriveTabs(photo, photo, //div[@class='page-stub page-stub_animated'])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="checkDriveTabs(mail, mail, //div[@class=&#039;root__listing&#039;])">checkDriveTabs(mail, mail, //div[@class='root__listing'])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="checkDriveTabs(recent, recent, //div[@class=&#039;client-listing client-listing_type_recent&#039;])">checkDriveTabs(recent, recent, //div[@class='client-listing client-listing_type_recent'])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="checkDriveTabs(disk, disk, //div[@class=&#039;client-listing&#039;])">checkDriveTabs(disk, disk, //div[@class='client-listing'])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="checkedCheckboxDisplayed">checkedCheckboxDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.CreateNewFolderTest" hash-for-method="clearTrash">clearTrash</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.CreateNewFolderTest" hash-for-method="createNewWordDock">createNewWordDock</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.CreateNewFolderTest" hash-for-method="deleteDock">deleteDock</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="invalidLoginAndPassword">invalidLoginAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.CreateNewFolderTest" hash-for-method="reopenFile">reopenFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.MenuItemsTests" hash-for-method="sharedTabTest">sharedTabTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="validLoginAndInvalidPassword">validLoginAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="validLoginAndemptyPassword">validLoginAndemptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="validPasswordAndemptyLogin">validPasswordAndemptyLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.LoginDomikTests" hash-for-method="validValues">validValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Tests.CreateNewFolderTest" hash-for-method="visitToFolder">visitToFolder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.CreateNewFolderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createFolder">
+                  </a> <!-- createFolder -->
+                  <span class="method-name">createFolder</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at Pages.Base.retryingFindClick(Base.java:48)
+	at Pages.Base.waitAndClick(Base.java:40)
+	at Pages.DiskPage.createNewFolder(DiskPage.java:229)
+	at Tests.CreateNewFolderTest.createFolder(CreateNewFolderTest.java:23)
+	at TestRunner.main(TestRunner.java:11)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LoginDomikTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allFieldsEmpty">
+                  </a> <!-- allFieldsEmpty -->
+                  <span class="method-name">allFieldsEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkedCheckboxDisplayed">
+                  </a> <!-- checkedCheckboxDisplayed -->
+                  <span class="method-name">checkedCheckboxDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginAndPassword">
+                  </a> <!-- invalidLoginAndPassword -->
+                  <span class="method-name">invalidLoginAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginAndInvalidPassword">
+                  </a> <!-- validLoginAndInvalidPassword -->
+                  <span class="method-name">validLoginAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginAndemptyPassword">
+                  </a> <!-- validLoginAndemptyPassword -->
+                  <span class="method-name">validLoginAndemptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validPasswordAndemptyLogin">
+                  </a> <!-- validPasswordAndemptyLogin -->
+                  <span class="method-name">validPasswordAndemptyLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validValues">
+                  </a> <!-- validValues -->
+                  <span class="method-name">validValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.MenuItemsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDriveTabs(trash, trash, //div[@class=&#039;client-listing client-listing_type_trash&#039;])">
+                  </a> <!-- checkDriveTabs(trash, trash, //div[@class='client-listing client-listing_type_trash']) -->
+                  <span class="method-name">checkDriveTabs</span>
+                  <span class="parameters">(trash, trash, //div[@class='client-listing client-listing_type_trash'])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDriveTabs(journal, journal, //div[@class=&#039;journal-cluster&#039;])">
+                  </a> <!-- checkDriveTabs(journal, journal, //div[@class='journal-cluster']) -->
+                  <span class="method-name">checkDriveTabs</span>
+                  <span class="parameters">(journal, journal, //div[@class='journal-cluster'])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDriveTabs(photo, photo, //div[@class=&#039;page-stub page-stub_animated&#039;])">
+                  </a> <!-- checkDriveTabs(photo, photo, //div[@class='page-stub page-stub_animated']) -->
+                  <span class="method-name">checkDriveTabs</span>
+                  <span class="parameters">(photo, photo, //div[@class='page-stub page-stub_animated'])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDriveTabs(mail, mail, //div[@class=&#039;root__listing&#039;])">
+                  </a> <!-- checkDriveTabs(mail, mail, //div[@class='root__listing']) -->
+                  <span class="method-name">checkDriveTabs</span>
+                  <span class="parameters">(mail, mail, //div[@class='root__listing'])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDriveTabs(recent, recent, //div[@class=&#039;client-listing client-listing_type_recent&#039;])">
+                  </a> <!-- checkDriveTabs(recent, recent, //div[@class='client-listing client-listing_type_recent']) -->
+                  <span class="method-name">checkDriveTabs</span>
+                  <span class="parameters">(recent, recent, //div[@class='client-listing client-listing_type_recent'])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDriveTabs(disk, disk, //div[@class=&#039;client-listing&#039;])">
+                  </a> <!-- checkDriveTabs(disk, disk, //div[@class='client-listing']) -->
+                  <span class="method-name">checkDriveTabs</span>
+                  <span class="parameters">(disk, disk, //div[@class='client-listing'])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sharedTabTest">
+                  </a> <!-- sharedTabTest -->
+                  <span class="method-name">sharedTabTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.CreateNewFolderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearTrash">
+                  </a> <!-- clearTrash -->
+                  <span class="method-name">clearTrash</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CreateNewFolderTest.clearTrash()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at TestRunner.main(TestRunner.java:11)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewWordDock">
+                  </a> <!-- createNewWordDock -->
+                  <span class="method-name">createNewWordDock</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CreateNewFolderTest.createNewWordDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at TestRunner.main(TestRunner.java:11)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDock">
+                  </a> <!-- deleteDock -->
+                  <span class="method-name">deleteDock</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CreateNewFolderTest.deleteDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at TestRunner.main(TestRunner.java:11)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reopenFile">
+                  </a> <!-- reopenFile -->
+                  <span class="method-name">reopenFile</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CreateNewFolderTest.reopenFile()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at TestRunner.main(TestRunner.java:11)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="visitToFolder">
+                  </a> <!-- visitToFolder -->
+                  <span class="method-name">visitToFolder</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CreateNewFolderTest.visitToFolder()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at TestRunner.main(TestRunner.java:11)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/pasha/gtat2018q3_pavel_babrou/taf/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;NameOFTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.CreateNewFolderTest&quot;/&gt;
+      &lt;class name=&quot;Tests.LoginDomikTests&quot;/&gt;
+      &lt;class name=&quot;Tests.MenuItemsTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NameOFTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NameOFTest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createFolder')
+data.setCell(0, 2, 'Tests.CreateNewFolderTest')
+data.setCell(0, 3, 723);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createNewWordDock')
+data.setCell(1, 2, 'Tests.CreateNewFolderTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkDriveTabs')
+data.setCell(2, 2, 'Tests.MenuItemsTests')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkDriveTabs')
+data.setCell(3, 2, 'Tests.MenuItemsTests')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clearTrash')
+data.setCell(4, 2, 'Tests.CreateNewFolderTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkDriveTabs')
+data.setCell(5, 2, 'Tests.MenuItemsTests')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkDriveTabs')
+data.setCell(6, 2, 'Tests.MenuItemsTests')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkDriveTabs')
+data.setCell(7, 2, 'Tests.MenuItemsTests')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'sharedTabTest')
+data.setCell(8, 2, 'Tests.MenuItemsTests')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validLoginAndInvalidPassword')
+data.setCell(9, 2, 'Tests.LoginDomikTests')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'deleteDock')
+data.setCell(10, 2, 'Tests.CreateNewFolderTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkDriveTabs')
+data.setCell(11, 2, 'Tests.MenuItemsTests')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'visitToFolder')
+data.setCell(12, 2, 'Tests.CreateNewFolderTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validPasswordAndemptyLogin')
+data.setCell(13, 2, 'Tests.LoginDomikTests')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkedCheckboxDisplayed')
+data.setCell(14, 2, 'Tests.LoginDomikTests')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'invalidLoginAndPassword')
+data.setCell(15, 2, 'Tests.LoginDomikTests')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validValues')
+data.setCell(16, 2, 'Tests.LoginDomikTests')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'allFieldsEmpty')
+data.setCell(17, 2, 'Tests.LoginDomikTests')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'reopenFile')
+data.setCell(18, 2, 'Tests.CreateNewFolderTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validLoginAndemptyPassword')
+data.setCell(19, 2, 'Tests.LoginDomikTests')
+data.setCell(19, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 723 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.CreateNewFolderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createFolder</span>
+                <span class="method-start">7540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8268 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LoginDomikTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setupClass</span>
+                <span class="method-start">8398 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">allFieldsEmpty</span>
+                <span class="method-start">10799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkedCheckboxDisplayed</span>
+                <span class="method-start">10800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginAndPassword</span>
+                <span class="method-start">10800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginAndInvalidPassword</span>
+                <span class="method-start">10801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginAndemptyPassword</span>
+                <span class="method-start">10801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validPasswordAndemptyLogin</span>
+                <span class="method-start">10801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validValues</span>
+                <span class="method-start">10802 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.MenuItemsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setupClass</span>
+                <span class="method-start">10802 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkDriveTabs(recent, recent, //div[@class='client-listing client-listing_type_recent'])</span>
+                <span class="method-start">12806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDriveTabs(disk, disk, //div[@class='client-listing'])</span>
+                <span class="method-start">12806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDriveTabs(photo, photo, //div[@class='page-stub page-stub_animated'])</span>
+                <span class="method-start">12807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDriveTabs(journal, journal, //div[@class='journal-cluster'])</span>
+                <span class="method-start">12807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDriveTabs(mail, mail, //div[@class='root__listing'])</span>
+                <span class="method-start">12808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkDriveTabs(trash, trash, //div[@class='client-listing client-listing_type_trash'])</span>
+                <span class="method-start">12808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sharedTabTest</span>
+                <span class="method-start">12809 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

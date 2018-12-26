@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="19" failed="1" total="20" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12842" started-at="2018-12-26T09:40:12Z" finished-at="2018-12-26T09:40:25Z">
+    <groups>
+    </groups>
+    <test name="NameOFTest" duration-ms="12842" started-at="2018-12-26T09:40:12Z" finished-at="2018-12-26T09:40:25Z">
+      <class name="Tests.LoginDomikTests">
+        <test-method status="FAIL" signature="setupClass()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="setupClass" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:20Z" finished-at="2018-12-26T12:40:20Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5),platform=Linux 4.15.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'sm-qa', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-43-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615279 (12b89733300bd2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33809}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: a502397a4b7dd4dbc25e9a3b9e53a7a4
+*** Element info: {Using=xpath, value=//a[contains(@class,'button_login')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5),platform=Linux 4.15.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'sm-qa', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-43-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615279 (12b89733300bd2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:33809}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: a502397a4b7dd4dbc25e9a3b9e53a7a4
+*** Element info: {Using=xpath, value=//a[contains(@class,'button_login')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Pages.LoginPage.getDiskLoginButton(LoginPage.java:53)
+	at Tests.LoginDomikTests.setupClass(LoginDomikTests.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="SKIP" signature="allFieldsEmpty()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="allFieldsEmpty" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allFieldsEmpty -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="SKIP" signature="invalidLoginAndPassword()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="invalidLoginAndPassword" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginAndPassword -->
+        <test-method status="SKIP" signature="checkedCheckboxDisplayed()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="checkedCheckboxDisplayed" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkedCheckboxDisplayed -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="SKIP" signature="validPasswordAndemptyLogin()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="validPasswordAndemptyLogin" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validPasswordAndemptyLogin -->
+        <test-method status="SKIP" signature="validLoginAndemptyPassword()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="validLoginAndemptyPassword" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginAndemptyPassword -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="SKIP" signature="validLoginAndInvalidPassword()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="validLoginAndInvalidPassword" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginAndInvalidPassword -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="SKIP" signature="validValues()[pri:1, instance:Tests.LoginDomikTests@50675690]" name="validValues" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validValues -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="preCondition()[pri:0, instance:Tests.LoginDomikTests@50675690]" name="preCondition" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+      </class> <!-- Tests.LoginDomikTests -->
+      <class name="Tests.CreateNewFolderTest">
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="setupClass" is-config="true" duration-ms="7535" started-at="2018-12-26T12:40:12Z" finished-at="2018-12-26T12:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="FAIL" signature="createFolder()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="createFolder" duration-ms="723" started-at="2018-12-26T12:40:19Z" finished-at="2018-12-26T12:40:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at Pages.Base.retryingFindClick(Base.java:48)
+	at Pages.Base.waitAndClick(Base.java:40)
+	at Pages.DiskPage.createNewFolder(DiskPage.java:229)
+	at Tests.CreateNewFolderTest.createFolder(CreateNewFolderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFolder -->
+        <test-method status="SKIP" signature="visitToFolder()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="visitToFolder" duration-ms="0" started-at="2018-12-26T12:40:20Z" depends-on-methods="Tests.CreateNewFolderTest.createFolder" finished-at="2018-12-26T12:40:20Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateNewFolderTest.visitToFolder()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateNewFolderTest.visitToFolder()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitToFolder -->
+        <test-method status="SKIP" signature="createNewWordDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="createNewWordDock" duration-ms="0" started-at="2018-12-26T12:40:20Z" depends-on-methods="Tests.CreateNewFolderTest.visitToFolder" finished-at="2018-12-26T12:40:20Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateNewFolderTest.createNewWordDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateNewFolderTest.createNewWordDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewWordDock -->
+        <test-method status="SKIP" signature="clearTrash()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="clearTrash" duration-ms="0" started-at="2018-12-26T12:40:20Z" depends-on-methods="Tests.CreateNewFolderTest.deleteDock" finished-at="2018-12-26T12:40:20Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateNewFolderTest.clearTrash()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateNewFolderTest.clearTrash()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearTrash -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="tearDown" is-config="true" duration-ms="130" started-at="2018-12-26T12:40:20Z" finished-at="2018-12-26T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="deleteDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="deleteDock" duration-ms="0" started-at="2018-12-26T12:40:20Z" depends-on-methods="Tests.CreateNewFolderTest.reopenFile" finished-at="2018-12-26T12:40:20Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateNewFolderTest.deleteDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateNewFolderTest.deleteDock()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDock -->
+        <test-method status="SKIP" signature="reopenFile()[pri:0, instance:Tests.CreateNewFolderTest@763d9750]" name="reopenFile" duration-ms="0" started-at="2018-12-26T12:40:20Z" depends-on-methods="Tests.CreateNewFolderTest.createNewWordDock" finished-at="2018-12-26T12:40:20Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateNewFolderTest.reopenFile()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateNewFolderTest.reopenFile()[pri:0, instance:Tests.CreateNewFolderTest@763d9750] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reopenFile -->
+      </class> <!-- Tests.CreateNewFolderTest -->
+      <class name="Tests.MenuItemsTests">
+        <test-method status="FAIL" signature="setupClass()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="setupClass" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:23Z" finished-at="2018-12-26T12:40:23Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5),platform=Linux 4.15.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'sm-qa', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-43-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615279 (12b89733300bd2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43667}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: dff89ad48c283a70166694e1d48a6fb4
+*** Element info: {Using=xpath, value=//a[contains(@class,'button_login')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5),platform=Linux 4.15.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'sm-qa', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-43-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615279 (12b89733300bd2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43667}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: dff89ad48c283a70166694e1d48a6fb4
+*** Element info: {Using=xpath, value=//a[contains(@class,'button_login')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Pages.LoginPage.getDiskLoginButton(LoginPage.java:53)
+	at Pages.LoginPage.login(LoginPage.java:102)
+	at Tests.MenuItemsTests.setupClass(MenuItemsTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at TestRunner.main(TestRunner.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="SKIP" signature="checkDriveTabs(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="checkDriveTabs" duration-ms="0" started-at="2018-12-26T12:40:25Z" data-provider="driveTabs" finished-at="2018-12-26T12:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[disk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[disk]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[@class='client-listing']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDriveTabs -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="checkDriveTabs(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="checkDriveTabs" duration-ms="0" started-at="2018-12-26T12:40:25Z" data-provider="driveTabs" finished-at="2018-12-26T12:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[recent]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[recent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[@class='client-listing client-listing_type_recent']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDriveTabs -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="checkDriveTabs(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="checkDriveTabs" duration-ms="0" started-at="2018-12-26T12:40:25Z" data-provider="driveTabs" finished-at="2018-12-26T12:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[journal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[journal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[@class='journal-cluster']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDriveTabs -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="checkDriveTabs(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="checkDriveTabs" duration-ms="0" started-at="2018-12-26T12:40:25Z" data-provider="driveTabs" finished-at="2018-12-26T12:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[photo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[photo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[@class='page-stub page-stub_animated']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDriveTabs -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="checkDriveTabs(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="checkDriveTabs" duration-ms="0" started-at="2018-12-26T12:40:25Z" data-provider="driveTabs" finished-at="2018-12-26T12:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[trash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[trash]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[@class='client-listing client-listing_type_trash']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDriveTabs -->
+        <test-method status="SKIP" signature="checkDriveTabs(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="checkDriveTabs" duration-ms="0" started-at="2018-12-26T12:40:25Z" data-provider="driveTabs" finished-at="2018-12-26T12:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mail]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//div[@class='root__listing']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDriveTabs -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="sharedTabTest()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="sharedTabTest" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sharedTabTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Tests.MenuItemsTests@31b7dea0]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-12-26T12:40:25Z" finished-at="2018-12-26T12:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.MenuItemsTests -->
+    </test> <!-- NameOFTest -->
+  </suite> <!-- Suite -->
+</testng-results>
